@@ -18,6 +18,7 @@ CHANNEL_ID = int(os.getenv("DISCORD_CHANNEL_ID"))
 SERVER = 'Solidera'
 
 intents = discord.Intents.default()
+intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 last_deaths = []
 
